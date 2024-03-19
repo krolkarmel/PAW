@@ -14,8 +14,8 @@
 	<fieldset>
 		<label for="id_login">login: </label>
 		<input id="id_login" type="text" name="login" value="<?php out($form['login']); ?>" />
-		<label for="id_pass">haslo: </label>
-		<input id="id_pass" type="password" name="haslo" />
+		<label for="id_haslo">haslo: </label>
+		<input id="id_haslo" type="password" name="haslo" />
 	</fieldset>
 	<input type="submit" value="Zaloguj" class="pure-button pure-button-primary"/>
 </form>	

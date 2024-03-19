@@ -21,21 +21,21 @@
 <table>
 	<tr>
 	<td><label for="id_kwotaKredytu">Kwota kredytu: </label></td>
-	<td><input id="id_kwotaKredytu" type="text" name="kwotaKredytu" value="<?php isset($kwotaKredytu) ? print($kwotaKredytu) : ''; ?>" /></td>
+	<td><input id="id_kwotaKredytu" type="text" name="kwotaKredytu" value="<?php echo isset($kwotaKredytu) ? $kwotaKredytu : '' ?>" /></td>
 </tr>
 <tr>
 	<td></td>
 </tr>
 	<tr>
 	<td><label for="id_wiek">Wiek: </label></td>
-	<td><input id="id_wiek" type="text" name="wiek" value="<?php isset($wiek) ? print($wiek) : ''; ?>" /></td>
+	<td><input id="id_wiek" type="text" name="wiek" value="<?php echo isset($wiek) ? $wiek : '' ?>" /></td>
 </tr>
 <tr>
 	<td></td>
 </tr>
 <tr>
 	<td><label for="id_oprocent">Oprocentowanie: </label></td>
-	<td><input id="id_oprocent" type="text" name="oprocent" value="<?php isset($oprocent) ? print($oprocent) : ''; ?>" /></td>
+	<td><input id="id_oprocent" type="text" name="oprocent" value="<?php echo isset($oprocent) ? $oprocent : '' ?>" /></td>
 </tr>
 	</table>
 	<br>
