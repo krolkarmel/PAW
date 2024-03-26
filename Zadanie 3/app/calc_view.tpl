@@ -5,7 +5,7 @@
         <h1><a href="index.html">Kalkulator Rat Kredytu</a> by Tomasz Król</h1>
 					<nav id="nav">
 						<ul>
-							<li><a href="\Zadanie 3\">Home</a></li>
+							<li><a href="\kalkulator\">Home</a></li>
 						</ul>
 					</nav>
 </header>
@@ -15,45 +15,26 @@
     <header id="banner">
         <h2>KALKULATOR</h2>
 					<p>Oblicz ratę dla Twojego kredytu.</p>
-					<ul class="actions special">
-						<li><a href="\Zadanie 3\" class="button primary">Oblicz ratę kredytu</a></li>
-					</ul>
+					{* <ul class="actions special">
+						<li><a href="\kalkulator\" class="button primary">Oblicz ratę kredytu</a></li>
+					</ul> *}
 </header>
 {/block}
 
 
 {block name=kalkulator}
 <div class="kalkulator">
-    <form action="{$app_url}/app/calc.php" method="post" class="pure-form pure-form-stacked">
-        <div class="row gtr-uniform">
-            <fieldset>
-
-            <div class="col-6 col-12-xsmall">
-               <h3> <label for="id_cost">Kwota kredytu: </label></h3>
-                <input id="id_cost" type="text" placeholder="Np. '400000'" name="cost" value="{$form['cost']}"><br>
-            </div>
-
-
-            <div class="col-6 col-12-xsmall">
-                <h3><label for="id_years">Liczba lat: </label></h3>
-                <input id="id_years" type="text" placeholder="Np.'8'" name="years" value="{$form['years']}"><br>
-            </div>
-
-
-            <div class="col-6 col-12-xsmall">
-                <h3><label for="id_percent">Oprocentowanie: </label></h3>
-                <input id="id_percent" type="text" placeholder="Np. '6.76'" name="percent" value="{$form['percent']}"><br>
-            </div>
-
-            </fieldset>
-            <div class="col-12">
-                <ul class="actions">
-                        <li><input type="submit" value="Oblicz" class="primary" /></li>
-                        <li><input type="reset" value="Zresetuj" /></li>
-                </ul>
-            </div>
-        </div>
-    </form>
+<form action="{$app_url}/app/calc.php" method="post" class="pure-form pure-form-stacked">
+<legend>Kalkulator rat kredytu</legend>
+	<label for="id_kwotaKredytu">Kwota kredytu: </label>
+	<input id="id_kwotaKredytu" type="text" name="kwotaKredytu" value="{$form['kwotaKredytu']}" />
+	<label for="id_wiek">Wiek: </label>
+	<input id="id_wiek" type="text" name="wiek" value="{$form['wiek']}" />
+	<label for="id_oprocent">Oprocentowanie: </label>
+	<input id="id_oprocent" type="text" name="oprocent" value="{$form['oprocent']}" />
+	<br>
+	<button type="submit" class="pure-button">Oblicz</button>
+</form>	
     </div>
 
         <div class="messages">
